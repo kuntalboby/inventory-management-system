@@ -1,0 +1,336 @@
+table.dataTable > tbody > tr > th, table.dataTable > tbody > tr > td {
+  padding: 3px 7px;
+  vertical-align: middle;
+}
+.error_box ul{ padding: 0; margin: 0 auto; list-style: none;}
+.manager-login-page{ align-items: center;
+    background:linear-gradient(90deg, hsla(259, 84%, 78%, 1) 0%, hsla(206, 67%, 75%, 1) 100%);
+
+    background: -moz-linear-gradient(90deg, hsla(259, 84%, 78%, 1) 0%, hsla(206, 67%, 75%, 1) 100%);
+    
+    background: -webkit-linear-gradient(90deg, hsla(259, 84%, 78%, 1) 0%, hsla(206, 67%, 75%, 1) 100%);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100vh;
+    -ms-flex-pack: center;
+    justify-content: center;}
+
+    .avatar-upload {
+        position: relative;
+        max-width: 205px;
+        margin: 50px auto;
+      }
+      .avatar-upload .avatar-edit {
+        position: absolute;
+        right: 12px;
+        z-index: 1;
+        top: 10px;
+      }
+      .avatar-upload .avatar-edit input {
+        display: none;
+      }
+      .avatar-upload .avatar-edit input + label {
+        display: inline-block;
+        width: 34px;
+        height: 34px;
+        margin-bottom: 0;
+        border-radius: 100%;
+        background: #FFFFFF;
+        border: 1px solid transparent;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+        cursor: pointer;
+        font-weight: normal;
+        transition: all 0.2s ease-in-out;
+      }
+      .avatar-upload .avatar-edit input + label:hover {
+        background: #f1f1f1;
+        border-color: #d6d6d6;
+      }
+      .avatar-upload .avatar-edit input + label:after {
+       
+        font-family: 'FontAwesome';
+        color: #757575;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: auto;
+      }
+      .avatar-upload .avatar-preview {
+        width: 192px;
+        height: 192px;
+        position: relative;
+        border-radius: 100%;
+        border: 6px solid #F8F8F8;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+      }
+      .avatar-upload .avatar-preview > div {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      
+      .uploadDp{
+        color: rgb(241, 197, 85);
+        padding: 8px;
+        display: block;
+        position: absolute;
+      }
+      .backgroundColor{
+      background-color: #fff;
+      background-image: url('../img/bg-02.jpg');
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      }
+      .backgroundColor .login-logo a{ color: #fff;}
+      .vendor-group{ background: #f6f8ff; padding: 15px; margin-bottom: 10px; box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;}
+      .vendor-group .form-control{ background: transparent !important;}
+      .vendor-group .fa-trash { background: #d8c2c2; padding: 20px; border-radius: 50%; float: right;}
+      .trashVendor{ cursor: pointer;}
+
+   .vendor-group select   option {
+  margin: 40px;
+  background:#f6f8ff;
+  color: #130808;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+.paging_simple_numbers_no_ellipses button{ background:#c1c1c1 !important; font-weight:bolder !important; }
+.login-box {
+    width:30%;
+    padding:0px;
+}
+.register-box {
+    max-width: 560px;
+    padding:0px;
+    box-shadow: rgba(250, 255, 177, 0.25) 0px 5px 15px;
+}
+ .vendor-group hr { border-bottom: 1px solid #fde7ce}
+  .card-body input[type="file"] {  border: none !important;}
+
+  .vendor-group .select2-container--bootstrap4 .select2-selection--single {
+  background: #f6f8ff !important;
+  color: #000 !important;
+}
+
+#suggestionList {
+    border: 1px solid #ccc;
+    background: white;
+    max-height: 200px;
+    overflow-y: auto;
+    /* position: absolute; */
+    width: 100%;
+}
+.suggest-item  , .onlyShowing{
+    padding: 8px;
+    cursor: pointer;
+}
+.suggest-item:hover ,.onlyShowing:hover {
+    background-color: #f0f0f0;
+}
+
+.card-body.login-card-body {
+  padding: 30px 50px;
+  border-radius: 30px;
+}
+.user-panel img {
+  height: 40px;
+  width: 40px;
+}
+.card-title {
+  line-height: 40px;
+}
+.login-box .h1{
+    margin-bottom:0px;
+}
+.cat-list li.list-group-item {
+    padding: .10rem 1rem;
+    border-radius: .25rem!important;
+    margin-right: 5px;
+}
+.cat-list li.list-group-item a {
+    font-size:13px;
+}
+
+.blink-effect {
+  animation: blinkHighlight 0.6s ease-in-out 4; /* 4 blinks */
+}
+.is-invalid {
+    border-color: red;
+    /* background-color: #ffe6e6; */
+}
+
+.thank-you-box {
+      max-width: 500px;
+      margin: 80px auto;
+      text-align: center;
+    }
+    .thank-you-icon {
+      font-size: 70px;
+      color: #28a745;
+      margin-bottom: 20px;
+    }
+
+ #invoiceType table {
+            width: 100%;
+
+            border-collapse: collapse;
+            margin-bottom: 0px !important;
+        }
+        #invoiceType table thead th {
+          height: 28px;
+          text-align: left;
+          font-size: 14px;
+          font-family: sans-serif;
+          font-weight: 400;
+        }
+        #invoiceType table, th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        #invoiceType .heading {
+            font-size: 24px;
+            margin-top: 12px;
+            margin-bottom: 12px;
+
+            font-family: sans-serif;
+        }
+        #invoiceType .small-heading {
+            font-size: 14px;
+            font-family: sans-serif;
+        }
+        #invoiceType .total-heading {
+            font-size: 14px;
+            font-weight: 700;
+            font-family: sans-serif;
+        }
+        #invoiceType .order-details tbody tr td:nth-child(1) {
+            width: 20%;
+        }
+        #invoiceType .order-details tbody tr td:nth-child(3) {
+            width: 20%;
+        }
+
+        #invoiceType .text-start {
+          text-align: left;
+          font-size: 20px;
+          margin-bottom: 0;
+        }
+        #invoiceType .text-end {
+            text-align: right;
+        }
+        #invoiceType .text-center {
+            text-align: center;
+        }
+        #invoiceType .company-data span {
+            margin-bottom: 4px;
+            display: inline-block;
+            font-family: sans-serif;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        #invoiceType .no-border {
+            border: 1px solid #fff !important;
+        }
+        #invoiceType .bg-blue {
+
+            background-color: #414ab1;
+            color: #fff;
+        }
+        #invoiceType .card-title {
+          line-height: 27px;
+        }
+   #suggestionList{ cursor: pointer;}  
+   
+.products-list .product-img img {
+  height: 25px;
+  width: 25px;
+}
+.products-list .product-info {
+  margin-left: 35px;
+}
+.products-list .badge-info {
+  line-height: 20px;
+}
+.product-order-wrap .form-group {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.sidebar-dark-primary .nav-sidebar > .nav-item > .nav-link.active, .sidebar-light-primary .nav-sidebar > .nav-item > .nav-link.active {
+  background-color: rgba(255,255,255,.1);
+  color: #fff;
+}
+#kt_table_order td:last-child {
+        text-align: center;
+    }
+    .dt-buttons{ float:  right; margin-bottom: 10px;}
+    .dt-buttons-ord{ float:  right;}
+    
+    .dt-buttons  button, .dt-buttons-ord button { 
+    color: #fff !important;
+    background-color: #28a745 !important;
+    border-color: #28a745;
+    box-shadow: none;
+
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+.form-control {
+  height: calc(2.05rem + 1px);
+  padding: .15rem .75rem;
+}
+.input-group-text{
+    padding: .175rem .75rem;
+}
+.card-body {
+  padding: 0.50rem;
+}
+/* 08-08-25 */
+.pageSections{padding: 15px; background: #e9e6e6; margin: 5px 5px 10px;}
+.sortable-placeholder {
+    background: #f0f0f0;
+    border: 1px dashed #ccc;
+    height: 50px;
+    margin: 5px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .login-box {
+  width: 90%;
+}
+.card-body.login-card-body {
+  padding: 20px 20px;
+  border-radius: 30px;
+}
+.hiden-row{
+    display:none;
+}
+}
+
+@keyframes blinkHighlight {
+  0%   { background-color: rgb(199, 198, 248); }
+  50%  { background-color: rgb(164, 188, 253); }
+  100% { background-color: rgb(153, 201, 245); }
+}

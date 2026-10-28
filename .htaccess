@@ -1,0 +1,16 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+
+# Redirect /manager/ to /manager (remove trailing slash to prevent /public/manager redirect)
+RewriteCond %{REQUEST_URI} ^/manager/$
+RewriteRule ^manager/$ /manager [L,R=301]
+
+# Force HTTPS and remove www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} ^www\.livedomain\.com$ [NC]
+RewriteRule ^(.*)$ https://livedomain.com/$1 [L,R=301]
+
+# Rewrite to public folder
+RewriteRule ^$ public/index.php [L]
+RewriteRule ^((?!public/).*)$ public/$1 [L,NC]
+</IfModule>

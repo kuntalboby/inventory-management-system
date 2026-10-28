@@ -1,0 +1,162 @@
+@section('currentPage', ' Add Page')
+@php
+    $bgColor="dark";
+@endphp
+<x-admininnerlayout :$bgColor>
+  @section('title','Add Page')
+    
+    <section class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- left column -->
+            <div class="col-md-12">
+              <col-md-12>
+              @if (session('message'))
+              <div class="alertBox">
+                  <p class="text-center text text-{{session('response')}}">{{session('message')}}</p>
+              </div>
+              @endif
+              @if ($errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+            </col-md-12>
+              <!-- general form elements -->
+              <div class="card card-primary card-outline">
+                <div class="card-header">
+                  <h3 class="card-title">Add Page</h3>
+                  <div class="card-tools">
+                    
+                    <a href="{{route('admin.pages')}}" class="btn btn-light">
+                      Back
+                    </a>
+                    
+                  </div>
+                </div>
+            
+                <form action="{{route('admin.pages.store')}}" enctype="multipart/form-data" method="post">
+                 @csrf
+                  <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="title">Page Name *</label>
+                                <input type="text" data-slug="" 
+                                  value="{{old('title')}}"
+                                  name="title" class="form-control" id="title" placeholder="Enter Name *">
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="author">Meta Author Name</label>
+                                <input type="text" 
+                                  value="{{old('author')}}"
+                                  name="author" class="form-control"  id="author" placeholder="Enter Author Name">
+                              </div>
+                        </div> 
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="body_class">Body Class </label>
+                                <input type="text" 
+                                  value="{{old('body_class')}}"
+                                  name="body_class" class="form-control"  id="body_class" placeholder="Enter Special class name">
+                              </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label for="author">Body Id </label>
+                                <input type="text"
+                                  value="{{old('body_id')}}"
+                                  name="body_id" class="form-control"  id="body_id" placeholder="Enter Body id">
+                              </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="author">Banner Image (for inner page)</label>
+                                <input type="text"
+                                  value="{{old('bg_image')}}"
+                                  name="bg_image" class="form-control"  id="bg_image" placeholder="Image url">
+                              </div>
+                        </div>
+
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="meta_keyword">Meta Keyword </label>
+                                <textarea id="meta_keyword" name="meta_keyword" class="form-control" placeholder="Enter Keyword">{{old('meta_keyword')}}</textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="meta_description">Meta Description </label>
+                                <textarea id="meta_description" name="meta_description" class="form-control" placeholder="Enter Description">{{old('meta_description')}}</textarea>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="mb-5 additionalSections" id="additionalSections" data-val="0">
+                      <div class="row pageSections" id="section_0">
+                        <div class="card-header mb-3 w-80">
+                                    <h3 class="card-title">
+                                        
+                                        Section-<span class="secName">1</span>
+                                    </h3>
+                                </div>
+                                
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="heading[0]">Heading </label>
+                            <input type="hidden" class="form-control" name="data[0][sort_position]" id="sort_position_section_0" value="0"/>
+
+                            <input type="text" class="form-control" name="data[0][heading]" id="heading_0"/>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="content[0]">Content *</label>
+                                <textarea id="content_0" name="data[0][content]" class="form-control ckeditor" placeholder="Enter full content">{{old('content[0]')}}</textarea>
+                             </div>
+                        </div>
+                            
+                    </div>
+                    
+                        {{-- Dynamic Section mounted --}}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card-header" style="">
+                              <div class="card-tools">
+                                <button title="Section" type="button" class="btn btn-primary" onclick="sectioncntl('add','N')">
+                                    <i class="fa fa-plus"></i>
+                              </button>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                
+                  </div>
+                  <!-- /.card-body -->
+  
+                  <div class="card-footer">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                  </div>
+                </form>
+              </div>
+              <!-- /.card -->
+  
+        
+            </div>
+    
+          </div>
+          <!-- /.row -->
+        </div><!-- /.container-fluid -->
+      </section>
+</x-admininnerlayout>
